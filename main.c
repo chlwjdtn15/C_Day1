@@ -3,12 +3,12 @@
 // 조건 : 출력예시 처럼 출력되어야 합니다.
 // 조건 : `구현시작` 부분만 수정 할 수 있습니다.
 // 조건 : `&&, ||`없이 풀어야 합니다.
-
+/*
 #include <stdio.h>
 
 int main(void) {
   
-  int age = 18; // 여기 값을 바꿔가면서 해보세요
+  int age = 64; // 여기 값을 바꿔가면서 해보세요
 
   printf("당신의 나이는 %d살 입니다.\n", age);
 
@@ -37,15 +37,15 @@ int main(void) {
 
 
   if ( age >= 60) { 
-    printf("할인 대상이래요!\n");
-  }
-  else if ( age < 60) {
-    printf("You are not eligible for discount!\n");
-  }
 
-  if (age <= 19){
+    printf("할인 대상이래요!\n");
+
+  }
+  else if (age <= 19){
+
     printf("할인 대상이라네요!\n");
-  } else if (age > 19)
+
+  } else
   {
     printf("You are not eligible for discount!\n");
   }
@@ -60,6 +60,29 @@ int main(void) {
   if (age <= 19 || age >= 60 ) {
     printf("할인 대상이라네요!\n");
   }
+
+
+  
+
+  return 0;
+}*/
+
+//홀수와 짝수를 구별해주세요.
+// num이 짝수면 even, 홀수면 odd 출력해주세요.
+#include <stdio.h>
+
+int main(void) {
+  
+  int num = 7;
+
+
+  if ( num % 2 == 0 ) {
+    printf("짝수네여");
+
+  }else {
+    printf("홀수네여");
+  }
+
 
   return 0;
 }
