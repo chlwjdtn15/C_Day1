@@ -84,7 +84,7 @@ int main(void) {
     printf("홀수네여\n");
   }
 
-
+  num % 2 == 0 ? printf("even\n") : printf("odd\n");
     int num1 = 10;
     int num2 = 20;
 
