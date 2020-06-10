@@ -76,12 +76,49 @@ int main(void) {
   int num = 7;
 
 
-  if ( num % 2 == 0 ) {
-    printf("짝수네여");
+  if ( num % 2 == 0 ) {  // % = 남은 수, 즉 2로 나누었을때 나머지가 0 이면 짝수에요.
+                         //                2로 나누었을때 나머지가 생기면 홀수지요.
+    printf("짝수네여\n");
 
   }else {
-    printf("홀수네여");
+    printf("홀수네여\n");
   }
+
+
+    int num1 = 10;
+    int num2 = 20;
+
+
+    if (num1 > num2) {
+      printf("1번이 2번보다 커요\n");
+    }else {
+
+      printf("2번이 1번보다 커요\n");
+    }
+
+
+
+    // 운세 프로그램을 작성해주세요.
+    // 세 정수, 순서대로 년도, 월, 일이 있습니다.
+    //  (년 - 월 + 일)에 마지막 숫자가 0이면 "대박"을 출력, 그렇지 않으면 "그럭저럭"을 출력해주세요.
+
+
+    int year = 2020;
+    int month = 10;
+    int day = 10;
+    int sum = year - month + day;
+    int lucky = sum - year;
+
+    printf("%d\n", sum);
+
+    if ( lucky > 0 ) {
+      printf("그럭저럭\n");
+    }
+    else {
+      printf("대박\n");
+    }
+    
+
 
 
   return 0;
